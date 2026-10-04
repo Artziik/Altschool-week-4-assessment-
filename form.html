@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AltSchool Application Form</title>
+</head>
+
+<body>
+
+    <header>
+
+        <!-- Global Navigation -->
+        <nav aria-label="Global navigation">
+            <a href="index.html">Home</a> |
+            <a href="form.html" aria-current="page">Application Form</a>
+        </nav>
+
+        <h1>AltSchool Africa Application Form</h1>
+
+        <p>
+            Complete the form below with your personal, contact,
+            educational and programme information.
+        </p>
+
+    </header>
+
+    <main>
+
+        <form action="#" method="post">
+
+            <!-- Personal Information -->
+            <fieldset>
+
+                <legend>Personal Information</legend>
+
+                <p>
+                    <label for="first-name">
+                        First Name <span aria-hidden="true">*</span>
+                    </label>
+                    <br>
+
+                    <input
+                        type="text"
+                        id="first-name"
+                        name="first_name"
+                        autocomplete="given-name"
+                        required
+                    >
+                </p>
+
+                <p>
+                    <label for="middle-name">
+                        Middle Name
+                    </label>
+                    <br>
+
+                    <input
+                        type="text"
+                        id="middle-name"
+                        name="middle_name"
+                        autocomplete="additional-name"
+                    >
+                </p>
+
+                <p>
+                    <label for="last-name">
+                        Last Name <span aria-hidden="true">*</span>
+                    </label>
+                    <br>
+
+                    <input
+                        type="text"
+                        id="last-name"
+                        name="last_name"
+                        autocomplete="family-name"
+                        required
+                    >
+                </p>
+
+                <p>
+                    <label for="email">
+                        Email Address <span aria-hidden="true">*</span>
+                    </label>
+                    <br>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        autocomplete="email"
+                        placeholder="you@example.com"
+                        required
+                    >
+                </p>
+
+                <p>
+                    <label for="phone">
+                        Phone Number <span aria-hidden="true">*</span>
+                    </label>
+                    <br>
+
+                    <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        autocomplete="tel"
+                        placeholder="+234..."
+                        required
+                    >
+                </p>
+
+                <p>
+                    <label for="dob">
+                        Date of Birth <span aria-hidden="true">*</span>
+                    </label>
+                    <br>
+
+                    <input
+                        type="date"
+                        id="dob"
+                        name="date_of_birth"
+                        autocomplete="bday"
+                        required
+                    >
+                </p>
+
+                <!-- Gender -->
+                <fieldset>
+
+                    <legend>Gender</legend>
+
+                    <input
+                        type="radio"
+                        id="male"
+                        name="gender"
+                        value="male"
+                    >
+
+                    <label for="male">Male</label>
+
+                    <br>
+
+                    <input
+                        type="radio"
+                        id="female"
+                        name="gender"
+                        value="female"
+                    >
+
+                    <label for="female">Female</label>
+
+                    <br>
+
+                    <input
+                        type="radio"
+                        id="other"
+                        name="gender"
+                        value="other"
+                    >
+
+                    <label for="other">Other</label>
+
+                    <br>
+
+                    <input
+                        type="radio"
+                        id="prefer-not"
+                        name="gender"
+                        value="prefer_not_to_say"
+                    >
+
+                    <label for="prefer-not">
+                        Prefer not to say
+                    </label>
+
+                </fieldset>
+
+            </fieldset>
+
+            <br>
+
+
+            <!-- Address Information -->
+            <fieldset>
+
+                <legend>Address Information</legend>
+
+                <p>
+                    <label for="address">
+                        Address <span aria-hidden="true">*</span>
+                    </label>
+                    <br>
+
+                    <textarea
+                        id="address"
+                        name="address"
+                        rows="4"
+                        cols="40"
+                        autocomplete="street-address"
+                        required
+                    ></textarea>
+                </p>
+
+                <p>
+                    <label for="city">
+                        City <span aria-hidden="true">*</span>
+                    </label>
+                    <br>
+
+                    <input
+                        type="text"
+                        id="city"
+                        name="city"
+                        autocomplete="address-level2"
+                        required
+                    >
+                </p>
+
+                <p>
+                    <label for="state">
+                        State <span aria-hidden="true">*</span>
+                    </label>
+                    <br>
+
+                    <input
+                        type="text"
+                        id="state"
+                        name="state"
+                        autocomplete="address-level1"
+                        required
+                    >
+                </p>
+
+                <p>
+                    <label for="country">
+                        Country <span aria-hidden="true">*</span>
+                    </label>
+                    <br>
+
+                    <select
+                        id="country"
+                        name="country"
+                        autocomplete="country-name"
+                        required
+                    >
+                        <option value="">
+                            -- Select your country --
+                        </option>
+
+                        <option value="nigeria">
+                            Nigeria
+                        </option>
+
+                        <option value="ghana">
+                            Ghana
+                        </option>
+
+                        <option value="kenya">
+                            Kenya
+                        </option>
+
+                        <option value="south-africa">
+                            South Africa
+                        </option>
+
+                        <option value="other">
+                            Other
+                        </option>
+
+                    </select>
+
+                </p>
+
+            </fieldset>
+
+            <br>
+
+
+            <!-- Educational Information -->
+            <fieldset>
+
+                <legend>Educational Information</legend>
+
+                <p>
+                    <label for="education">
+                        Highest Educational Qualification
+                    </label>
+                    <br>
+
+                    <select id="education" name="education">
+
+                        <option value="">
+                            -- Select qualification --
+                        </option>
+
+                        <option value="secondary">
+                            Secondary School
+                        </option>
+
+                        <option value="certificate">
+                            Certificate
+                        </option>
+
+                        <option value="diploma">
+                            Diploma / HND
+                        </option>
+
+                        <option value="bachelor">
+                            Bachelor's Degree
+                        </option>
+
+                        <option value="master">
+                            Master's Degree
+                        </option>
+
+                        <option value="other">
+                            Other
+                        </option>
+
+                    </select>
+
+                </p>
+
+                <p>
+                    <label for="institution">
+                        Name of School or Institution
+                    </label>
+                    <br>
+
+                    <input
+                        type="text"
+                        id="institution"
+                        name="institution"
+                        autocomplete="organization"
+                    >
+                </p>
+
+                <p>
+                    <label for="course">
+                        Course of Study
+                    </label>
+                    <br>
+
+                    <input
+                        type="text"
+                        id="course"
+                        name="course"
+                    >
+                </p>
+
+                <p>
+                    <label for="graduation-year">
+                        Year of Graduation
+                    </label>
+                    <br>
+
+                    <input
+                        type="number"
+                        id="graduation-year"
+                        name="graduation_year"
+                        min="1950"
+                        max="2030"
+                    >
+                </p>
+
+            </fieldset>
+
+            <br>
+
+
+            <!-- Programme Selection -->
+            <fieldset>
+
+                <legend>Programme Selection</legend>
+
+                <p>
+                    <label for="school">
+                        School <span aria-hidden="true">*</span>
+                    </label>
+                    <br>
+
+                    <select
+                        id="school"
+                        name="school"
+                        required
+                    >
+
+                        <option value="">
+                            -- Select a school --
+                        </option>
+
+                        <option value="engineering">
+                            School of Engineering
+                        </option>
+
+                        <option value="data">
+                            School of Data
+                        </option>
+
+                        <option value="product">
+                            School of Product
+                        </option>
+
+                        <option value="business">
+                            School of Business
+                        </option>
+
+                        <option value="creative-economy">
+                            School of Creative Economy
+                        </option>
+
+                    </select>
+
+                </p>
+
+                <p>
+                    <label for="track">
+                        Preferred Track <span aria-hidden="true">*</span>
+                    </label>
+                    <br>
+
+                    <select
+                        id="track"
+                        name="track"
+                        required
+                    >
+
+                        <option value="">
+                            -- Select a track --
+                        </option>
+
+                        <option value="frontend">
+                            Frontend Engineering
+                        </option>
+
+                        <option value="backend">
+                            Backend Engineering
+                        </option>
+
+                        <option value="cloud">
+                            Cloud Engineering
+                        </option>
+
+                    </select>
+
+                </p>
+
+            </fieldset>
+
+            <br>
+
+
+            <!-- Additional Information -->
+            <fieldset>
+
+                <legend>Additional Information</legend>
+
+                <p>
+
+                    <label for="motivation">
+                        Why do you want to join AltSchool?
+                    </label>
+
+                    <br>
+
+                    <textarea
+                        id="motivation"
+                        name="motivation"
+                        rows="6"
+                        cols="50"
+                        placeholder="Tell us about your motivation..."
+                    ></textarea>
+
+                </p>
+
+                <p>
+
+                    <label for="hear-about">
+                        How did you hear about AltSchool?
+                    </label>
+
+                    <br>
+
+                    <select
+                        id="hear-about"
+                        name="hear_about"
+                    >
+
+                        <option value="">
+                            -- Select an option --
+                        </option>
+
+                        <option value="social-media">
+                            Social Media
+                        </option>
+
+                        <option value="friend">
+                            Friend or Recommendation
+                        </option>
+
+                        <option value="search-engine">
+                            Search Engine
+                        </option>
+
+                        <option value="website">
+                            AltSchool Website
+                        </option>
+
+                        <option value="other">
+                            Other
+                        </option>
+
+                    </select>
+
+                </p>
+
+            </fieldset>
+
+            <br>
+
+
+            <!-- Account Details -->
+            <fieldset>
+
+                <legend>Account Details</legend>
+
+                <p>
+
+                    <label for="password">
+                        Password <span aria-hidden="true">*</span>
+                    </label>
+
+                    <br>
+
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        autocomplete="new-password"
+                        minlength="8"
+                        required
+                    >
+
+                </p>
+
+                <p>
+
+                    <label for="confirm-password">
+                        Confirm Password <span aria-hidden="true">*</span>
+                    </label>
+
+                    <br>
+
+                    <input
+                        type="password"
+                        id="confirm-password"
+                        name="confirm_password"
+                        autocomplete="new-password"
+                        minlength="8"
+                        required
+                    >
+
+                </p>
+
+            </fieldset>
+
+            <br>
+
+
+            <!-- Agreement -->
+            <fieldset>
+
+                <legend>Agreement</legend>
+
+                <p>
+
+                    <input
+                        type="checkbox"
+                        id="agreement"
+                        name="agreement"
+                        required
+                    >
+
+                    <label for="agreement">
+                        I confirm that the information provided is
+                        accurate and complete.
+                        <span aria-hidden="true">*</span>
+                    </label>
+
+                </p>
+
+            </fieldset>
+
+            <br>
+
+            <button type="submit">
+                Submit Application
+            </button>
+
+            <button type="reset">
+                Clear Form
+            </button>
+
+        </form>
+
+    </main>
+
+
+    <footer>
+
+        <hr>
+
+        <address>
+            Osun State, Nigeria
+        </address>
+
+        <p>
+            &copy; 2026 Isaac Samuel. All rights reserved.
+        </p>
+
+    </footer>
+
+</body>
+</html>
